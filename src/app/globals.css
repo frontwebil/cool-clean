@@ -1,26 +1,77 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Poppins; */
+}
+
+.container {
+  max-width: 1340px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.page-top-bg {
+  background-image: url("/bg-top.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  background: linear-gradient(
+    180deg,
+    #104fc8 0%,
+    #6baee6 24.04%,
+    #f1f6f8 35.1%,
+    #ffffff 39.42%,
+    #ffffff 84.13%
+  );
+}
+
+.page-bottom-bg {
+  background: linear-gradient(
+    180deg,
+    #104fc8 0%,
+    #6baee6 35.58%,
+    #f1f6f8 50.96%,
+    #ffffff 100%
+  );
+  background-image: url("/bg-bottom.png");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.button-order {
+  padding: 16px 32px;
+  background: rgba(40, 70, 243, 1);
+  border-radius: 30px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+  color: #fff;
+}
+
+.button-order:hover {
+  background: rgba(33, 59, 209, 1);
+}
+
+.button-cons {
+  padding: 16px 32px;
+  border: 1px solid var(--White, rgba(255, 255, 255, 1));
+  border-radius: 30px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button-cons:hover {
+  background: rgba(106, 167, 227, 1);
 }

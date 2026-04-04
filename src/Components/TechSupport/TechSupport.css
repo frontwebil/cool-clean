@@ -1,0 +1,146 @@
+.tech-support {
+  padding: 120px 0;
+}
+.tech-support-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 120%;
+  letter-spacing: 2px;
+  text-align: center;
+  color: rgba(60, 60, 70, 1);
+  max-width: 870px;
+  margin: 0 auto;
+  padding-bottom: 24px;
+}
+
+.tech-support-description {
+  max-width: 812px;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: rgba(60, 60, 70, 1);
+}
+
+.tech-support-flex {
+  margin-top: 60px;
+  display: flex;
+  align-items: stretch;
+  gap: 20px;
+}
+.tech-support-img img {
+  border-radius: 16px;
+  height: 100%;
+  object-fit: cover;
+}
+.tech-support-img {
+  max-width: 38%;
+  width: 100%;
+}
+.tech-support-cards {
+  display: flex;
+  flex-direction: column;
+  border-width: 1px, 1px, 0px, 1px;
+  border: 1px solid rgba(214, 214, 214, 1);
+  border-radius: 16px;
+}
+.tech-support-card {
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  border-bottom: 1px solid rgba(214, 214, 214, 1);
+}
+
+.tech-support-card:last-child {
+  border-bottom: none;
+}
+
+.tech-support-icon {
+  max-width: 60px;
+  width: 100%;
+}
+.tech-support-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tech-support-text h3 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0px;
+  color: rgba(5, 4, 19, 1);
+}
+
+.tech-support-text p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0px;
+}
+
+.tech-support-button {
+  max-width: 220px;
+  width: 100%;
+  margin: 60px auto 0;
+}
+
+@media (max-width: 1100px) {
+  .tech-support {
+    padding: 60px 0;
+  }
+  .tech-support-img {
+    max-width: 40%;
+    width: 100%;
+  }
+  .tech-support-cards {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 880px) {
+  .tech-support-flex {
+    flex-direction: column-reverse;
+  }
+  .tech-support-img {
+    max-width: 100%;
+    aspect-ratio: 1 / 1;
+  }
+  .tech-support-button {
+    max-width: calc(100% - 40px);
+  }
+  .tech-support-button button {
+    max-width: 100%;
+    width: 100%;
+  }
+  .tech-support-title {
+    text-align: left;
+    font-size: 28px;
+  }
+  .tech-support-description {
+    text-align: left;
+    font-size: 16px;
+  }
+  .tech-support-flex {
+    margin-top: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .tech-support-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 20px;
+  }
+  .tech-support-icon {
+    max-width: 50px;
+  }
+  .tech-support-button {
+    margin: 32px auto 0;
+  }
+}

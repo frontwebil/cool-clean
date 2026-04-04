@@ -1,0 +1,146 @@
+.stability {
+  padding: 180px 0 120px;
+}
+/* .container {
+} */
+.stability-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 120%;
+  text-align: center;
+}
+.stability-cards {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  border: 1px solid #e5e5e5;
+  border-radius: 16px;
+}
+
+.stability-card {
+  padding: 24px;
+
+  border-right: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.stability-card:nth-child(3n) {
+  border-right: none;
+}
+
+.stability-card:nth-last-child(-n + 3) {
+  border-bottom: none;
+}
+
+.stability-card-img {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(243, 249, 255, 1);
+  border-radius: 8px;
+}
+
+.stability-card-img img {
+  width: 34px;
+  height: 34px;
+}
+
+.stability-card h2 {
+  padding-top: 40px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  color: rgba(5, 4, 19, 1);
+}
+
+.stability-card p {
+  margin-top: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(5, 4, 19, 1);
+  line-height: 150%;
+}
+
+@media (max-width: 1100px) {
+  .stability {
+    padding: 60px 0;
+  }
+  .stability-title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 920px) {
+  .stability-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stability-card h2 {
+    padding-top: 24px;
+  }
+
+  .stability-card-img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .stability-card-img img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .stability-card:nth-child(3n) {
+    border-right: 1px solid #e5e5e5;
+  }
+
+  .stability-card:nth-last-child(-n + 3) {
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  .stability-card:nth-child(2n) {
+    border-right: none;
+  }
+
+  .stability-card:nth-last-child(-n + 2) {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .stability-cards {
+    grid-template-columns: 1fr;
+  }
+
+  /* скидаємо 3 колонки */
+  .stability-card:nth-child(3n) {
+    border-right: 1px solid #e5e5e5;
+  }
+
+  .stability-card:nth-last-child(-n + 3) {
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  /* скидаємо 2 колонки */
+  .stability-card:nth-child(2n) {
+    border-right: 1px solid #e5e5e5;
+  }
+
+  .stability-card:nth-last-child(-n + 2) {
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  /* правило для 1 колонки */
+  .stability-card {
+    border-right: none;
+  }
+
+  .stability-card:last-child {
+    border-bottom: none;
+  }
+  .stability-cards{
+    margin-top: 30px;
+  }
+}

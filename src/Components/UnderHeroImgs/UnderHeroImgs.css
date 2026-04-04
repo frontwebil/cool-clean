@@ -1,0 +1,49 @@
+.UnderHeroImgs-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.UnderHeroImgs-item {
+  max-width: 310px;
+  width: 100%;
+}
+
+.UnderHeroImgs-flex img {
+  width: 100%;
+  display: block;
+  border-radius: 16px;
+}
+
+@media (max-width: 1100px) {
+  .UnderHeroImgs-flex {
+    overflow-x: auto;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+  }
+
+  .UnderHeroImgs-item {
+    width: 310px;
+    min-width: 310px;
+    flex: 0 0 310px;
+  }
+
+  .UnderHeroImgs-flex img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .UnderHeroImgs-flex {
+    overflow-x: auto;
+    justify-content: flex-start;
+    gap: 16px;
+    padding-left: 20px; /* щоб перша не прилипала до краю */
+  }
+
+  .UnderHeroImgs-item {
+    flex: 0 0 80%;
+    max-width: 80%;
+  }
+}
