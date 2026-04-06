@@ -102,4 +102,8 @@ body {
       #fff 39.42% 84.13%
     );
   }
+  .page-bottom-bg {
+    background-image: url("/bg-bottom-mobile.png");
+    background-size: contain
+  }
 }
