@@ -15,7 +15,13 @@ export function UnderHeroImgs() {
         <div className="UnderHeroImgs-flex">
           {imgs.map((img, i) => (
             <div className="UnderHeroImgs-item" key={i}>
-              <Image src={img} alt="CoolClean" width={600} height={1000} />
+              <Image
+                src={img}
+                alt={`CoolClean ${i + 1}`}
+                width={600}
+                height={1000}
+                className="UnderHeroImgs-image"
+              />
             </div>
           ))}
         </div>
