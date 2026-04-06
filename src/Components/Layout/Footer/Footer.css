@@ -87,8 +87,11 @@
   }
 
   .footer-bottom-nav {
+    justify-content: space-between;
     align-items: flex-start;
     gap: 12px;
+    max-width: 100%;
+    width: 100%;
   }
 
   .footer-bottom-nav a {

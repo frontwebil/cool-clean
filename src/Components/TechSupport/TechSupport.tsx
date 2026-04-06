@@ -1,5 +1,6 @@
 import Image from "next/image";
 import "./TechSupport.css";
+import Link from "next/link";
 
 const techSupportCards = [
   {
@@ -65,9 +66,9 @@ export function TechSupport({ setIsOpenForm }: { setIsOpenForm: () => void }) {
         </div>
       </div>
       <div className="tech-support-button">
-        <button className="button-order" onClick={() => setIsOpenForm()}>
+        <Link href={"#contacts"} className="button-order">
           Замовити послугу
-        </button>
+        </Link>
       </div>
     </section>
   );

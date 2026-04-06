@@ -72,7 +72,7 @@ export function Header({ setIsOpenForm }: HeaderProps) {
   return (
     <>
       <header
-        className={`header ${isScrolled ? "header-scrolled" : ""}`}
+        className={`header ${isScrolled && !isOpen ? "header-scrolled" : ""}`}
         ref={ref}
       >
         <div className="header-wrapper">
@@ -130,20 +130,23 @@ export function Header({ setIsOpenForm }: HeaderProps) {
 
             {width && width <= 1100 && (
               <>
-                <div className="header-right-column-phones">
-                  <Link
-                    href="tel:380663633628"
-                    className="header-right-phone-link"
-                  >
-                    +38 (066) 363 36 28
-                  </Link>
-                  <Link
-                    href="tel:380733733728"
-                    className="header-right-phone-link"
-                  >
-                    +38 (073) 373 37 28
-                  </Link>
-                </div>
+                {(!isScrolled || isOpen) && (
+                  <div className="header-right-column-phones">
+                    <Link
+                      href="tel:380663633628"
+                      className="header-right-phone-link"
+                    >
+                      +38 (066) 363 36 28
+                    </Link>
+                    <Link
+                      href="tel:380733733728"
+                      className="header-right-phone-link"
+                    >
+                      +38 (073) 373 37 28
+                    </Link>
+                  </div>
+                )}
+
                 <button
                   className="header-burger-button"
                   onClick={() => setIsOpen((prev) => !prev)}

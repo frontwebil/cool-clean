@@ -1,11 +1,16 @@
+import { useWindowWidth } from "@/Hooks/useWindowWidth";
 import "./Hero.css";
+import Link from "next/link";
 
 export function Hero({ setIsOpenForm }: { setIsOpenForm: () => void }) {
+  const width = useWindowWidth();
   return (
     <section className="hero">
       <div className="container">
         <div className="hero-expirienct">
-          Більше 7 років досвіду в обслуговуванні кондиціонерів
+          {width && width >= 500
+            ? "Більше 7 років досвіду в обслуговуванні кондиціонерів"
+            : "7+  років досвіду обслуговування кондиціонерів "}
         </div>
         <h1 className="hero-title">
           Обслуговуємо кондиціонери у Києві та київській області
@@ -15,9 +20,9 @@ export function Hero({ setIsOpenForm }: { setIsOpenForm: () => void }) {
           складного технічного ремонту.
         </p>
         <div className="hero-buttons">
-          <button className="button-order" onClick={() => setIsOpenForm()}>
+          <Link href={'#contacts'} className="button-order">
             Замовити послугу
-          </button>
+          </Link>
           <button className="button-cons" onClick={() => setIsOpenForm()}>
             Отримати консультацію
           </button>

@@ -1,7 +1,32 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
 body {
-  /* font-family: Poppins; */
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -26,13 +51,6 @@ body {
 }
 
 .page-bottom-bg {
-  background: linear-gradient(
-    180deg,
-    #104fc8 0%,
-    #6baee6 35.58%,
-    #f1f6f8 50.96%,
-    #ffffff 100%
-  );
   background-image: url("/bg-bottom.png");
 
   background-size: cover;
@@ -74,4 +92,14 @@ body {
 
 .button-cons:hover {
   background: rgba(106, 167, 227, 1);
+}
+@media (max-width: 600px) {
+  .page-top-bg {
+    background: linear-gradient(
+      #104fc8 0%,
+      #d6ecff 24.04%,
+      #ffffff 35.1%,
+      #fff 39.42% 84.13%
+    );
+  }
 }

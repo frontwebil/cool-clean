@@ -1,5 +1,6 @@
 import Image from "next/image";
 import "./Condicioner.css";
+import Link from "next/link";
 
 export function Condicioner({ setIsOpenForm }: { setIsOpenForm: () => void }) {
   return (
@@ -15,9 +16,9 @@ export function Condicioner({ setIsOpenForm }: { setIsOpenForm: () => void }) {
             Не чекайте, поки це вплине на ваше здоров’я та ефективність
             кондиціонера.
           </p>
-          <button className="button-order" onClick={() => setIsOpenForm()}>
+          <Link href={"#contacts"} className="button-order">
             Замовити послугу
-          </button>
+          </Link>
         </div>
         <div className="condicioner-img">
           <Image
