@@ -40,7 +40,7 @@
 
 @media (max-width: 1100px) {
   .condicioner-text a {
-    max-width: 100%;
+    max-width: 100% !important;
   }
   .condicioner {
     padding: 60px 20px;
