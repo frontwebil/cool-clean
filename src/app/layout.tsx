@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
 
-
 import "./globals.css";
 import "./reset.css";
-
 
 export const metadata: Metadata = {
   title: "CoolClean",
   description:
     "Обслуговуємо кондиціонери у Києві та київській області. Забезпечуємо повний комплекс робіт: від профілактичної чистки до складного технічного ремонту.",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
