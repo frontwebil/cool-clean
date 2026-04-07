@@ -64,11 +64,14 @@
     font-size: 28px;
     margin: 24px 0 20px;
   }
+
+  .hero {
+    padding: 32px 0 60px;
+  }
 }
 
-
 @media (max-width: 370px) {
-  .hero-expirienct{
+  .hero-expirienct {
     font-size: 12px;
   }
 }
