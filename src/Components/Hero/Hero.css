@@ -70,9 +70,17 @@
   }
 }
 
+@media (max-width: 600px) {
+  .hero {
+    background: linear-gradient(180deg, #2f68d0 0%, #64abee 86.06%);
+  }
+  .hero {
+    padding: 40px 0 60px;
+  }
+}
 @media (max-width: 430px) {
   .hero {
-    padding: 10px 0 60px;
+    padding: 32px 0 60px;
   }
 }
 @media (max-width: 370px) {

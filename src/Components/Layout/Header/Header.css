@@ -322,6 +322,11 @@
     padding: 13px 20px;
     font-size: 15px;
   }
+
+  .header {
+    background: rgba(47, 104, 208, 1);
+    padding: 10px 12px 45px;
+  }
 }
 
 @media (max-width: 400px) {
