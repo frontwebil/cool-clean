@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@font-face {
+/* @font-face {
   font-family: "Poppins";
   src: url("/Fonts/Poppins-Regular.ttf") format("truetype");
   font-weight: 400;
@@ -23,10 +23,10 @@
   font-family: "Poppins";
   src: url("/Fonts/Poppins-Bold.ttf") format("truetype");
   font-weight: 700;
-}
+} */
 
 body {
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
 }
 
 .container {
