@@ -117,7 +117,7 @@
 
   /* скидаємо 3 колонки */
   .stability-card:nth-child(3n) {
-    border-right: 1px solid #e5e5e5;
+    border-right: none;
   }
 
   .stability-card:nth-last-child(-n + 3) {
@@ -126,7 +126,7 @@
 
   /* скидаємо 2 колонки */
   .stability-card:nth-child(2n) {
-    border-right: 1px solid #e5e5e5;
+    border-right: none;
   }
 
   .stability-card:nth-last-child(-n + 2) {
