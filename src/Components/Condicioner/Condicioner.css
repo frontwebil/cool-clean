@@ -33,7 +33,7 @@
   width: 100%;
 }
 
-.condicioner-text button {
+.condicioner-text a {
   max-width: 220px;
   width: 100%;
 }
@@ -55,7 +55,7 @@
 }
 
 @media (max-width: 740px) {
-  .condicioner-text button {
+  .condicioner-text a {
     max-width: 100%;
     width: 100%;
   }
