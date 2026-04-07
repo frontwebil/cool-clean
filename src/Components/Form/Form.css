@@ -96,6 +96,7 @@
   padding: 32px;
 }
 .main-form-right-title {
+  color: rgba(5, 4, 19, 1);
   font-weight: 600;
   font-size: 36px;
   letter-spacing: 2px;
@@ -204,10 +205,10 @@
   .main-form-left-text-numbers {
     padding-bottom: 34px;
   }
-  .main-form .container{
+  .main-form .container {
     padding: 0;
   }
-  .main-form-right{
+  .main-form-right {
     padding: 20px;
   }
 }

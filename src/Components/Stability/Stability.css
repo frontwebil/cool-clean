@@ -1,5 +1,6 @@
 .stability {
   padding: 180px 0 120px;
+  color: rgba(5, 4, 19, 1);
 }
 /* .container {
 } */
@@ -140,7 +141,7 @@
   .stability-card:last-child {
     border-bottom: none;
   }
-  .stability-cards{
+  .stability-cards {
     margin-top: 30px;
   }
 }
