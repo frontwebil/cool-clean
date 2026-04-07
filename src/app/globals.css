@@ -109,4 +109,8 @@ body {
     background: transparent;
     background-size: contain;
   }
+  .page-top-bg {
+    background: transparent;
+    background-image: none;
+  }
 }
