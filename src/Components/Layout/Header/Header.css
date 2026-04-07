@@ -1,6 +1,6 @@
 .header {
   color: #fff;
-  padding: 12px 20px 0;
+  padding: 24px 20px 24px;
   position: fixed;
   top: 0;
   left: 0;
@@ -26,10 +26,8 @@
   z-index: 2000;
 }
 
-.header-scrolled .header-wrapper {
-  background: #104fc8;
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+.header-scrolled {
+  background: rgba(47, 104, 208, 1);
 }
 
 .header-logo img {
@@ -272,7 +270,7 @@
     width: 100%;
   }
   .header {
-    padding: 12px 16px 0;
+    padding: 12px 16px 12px;
   }
 
   .header-wrapper {
@@ -296,7 +294,7 @@
     left: 0;
   }
   .header {
-    padding: 10px 12px 0;
+    padding: 10px 12px 65px;
   }
 
   .header-wrapper {
@@ -309,11 +307,10 @@
   }
 
   .header-mobile-menu {
-    
     padding: 130px 18px 20px;
   }
 
-  .header-mobile-nav{
+  .header-mobile-nav {
     margin-bottom: 20px;
   }
 
