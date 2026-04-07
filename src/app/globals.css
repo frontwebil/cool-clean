@@ -96,6 +96,9 @@ body {
   background: rgba(106, 167, 227, 1);
 }
 @media (max-width: 600px) {
+  .container{
+    padding: 0 16px;
+  }
   .page-top-bg {
     background: linear-gradient(
       #104fc8 0%,
