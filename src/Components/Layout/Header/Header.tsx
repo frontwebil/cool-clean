@@ -27,7 +27,7 @@ export function Header({ setIsOpenForm }: HeaderProps) {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
+      setIsScrolled(window.scrollY > 40);
     };
 
     handleScroll();
