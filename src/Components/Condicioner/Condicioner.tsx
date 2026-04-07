@@ -8,7 +8,7 @@ export function Condicioner({ setIsOpenForm }: { setIsOpenForm: () => void }) {
       <div className="container">
         <div className="condicioner-text">
           <h3 className="condicioner-text-title">
-            Брудний кондиціонер — це не лише про пил, а й про бактерії у
+            Брудний кондиціонер — це не лише про пил, а й про бактерії <br /> у
             повітрі.
           </h3>
           <p className="condicioner-text-description">
