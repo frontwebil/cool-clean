@@ -80,6 +80,11 @@
   }
 }
 
+@media (max-width: 600px) {
+  .resaults {
+    background: linear-gradient(180deg, #ffffff 30%, #4480d7 100%);
+  }
+}
 @media (max-width: 500px) {
   .resaults-top-nav {
     justify-content: center;

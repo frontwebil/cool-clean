@@ -212,3 +212,9 @@
     padding: 20px;
   }
 }
+
+@media (max-width: 600px) {
+  .main-form {
+    background: linear-gradient(180deg, #4681d7 0%, #1453c9 100%);
+  }
+}

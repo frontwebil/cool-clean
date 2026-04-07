@@ -98,3 +98,9 @@
     line-height: 140%;
   }
 }
+
+@media (max-width: 600px) {
+  .footer {
+    background: rgba(21, 84, 201, 1);
+  }
+}

@@ -105,7 +105,8 @@ body {
     );
   }
   .page-bottom-bg {
-    background-image: url("/bg-bottom-mobile.png");
+    background-image: none;
+    background: transparent;
     background-size: contain;
   }
 }
