@@ -17,6 +17,28 @@ export default function Home() {
   const setIsOpenFormFunction = () => {
     setIsOpenForm(!isOpenForm);
   };
+  const isDisabled = process.env.NEXT_PUBLIC_SITE_DISABLED !== "false";
+
+  if (isDisabled) {
+    return (
+      <main
+        style={{
+          minHeight: "100vh",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          padding: "20px",
+          textAlign: "center",
+        }}
+      >
+        <div>
+          <h1>Сайт тимчасово недоступний</h1>
+          <p>Для відновлення доступу зверніться до адміністратора.</p>
+        </div>
+      </main>
+    );
+  }
+
   return (
     <>
       <Form isOpenForm={isOpenForm} setIsOpen={setIsOpenFormFunction} />
