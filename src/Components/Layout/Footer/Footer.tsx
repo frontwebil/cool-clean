@@ -24,6 +24,7 @@ export function Footer() {
             <Link href="#services">Послуги</Link>
             <Link href="#resaults">Результати</Link>
             <Link href="#contacts">Контакти</Link>
+            <Link href="/privacy-policy">Політика конфіденційності</Link>
           </nav>
           <p>© 2026 CoolClean</p>
         </div>
